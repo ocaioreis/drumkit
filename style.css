@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('https://revistaoeste.com/wp-content/uploads/2022/07/whiplash.webp');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    color: #FFAA00;
+    margin: 20vh auto;
+    font-size: calc(5vw + 20px);
+    text-shadow: 0 0 10px #FFAA00;
+    font-family: 'Anton', sans-serif;
+}
+
+.container{
+    width: 90vw;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.key{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000BB;
+    color: white;
+    font: calc(3vw + 20px);
+    border: 3px solid white; /* opcional */
+    cursor: pointer;
+    transition: transform .1s;
+}
+
+.active{
+    transform: scale(1.3);
+    border-color: whitesmoke;
+    box-shadow: 0 0 50px whitesmoke;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: whitesmoke;
+}
+
+#like{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#like:active{
+    transform: scale(1.4);
+    cursor: pointer;
+}
